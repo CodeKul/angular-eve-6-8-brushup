@@ -1,0 +1,1 @@
+console.log('welcome to codekul' + (10 + 10));
