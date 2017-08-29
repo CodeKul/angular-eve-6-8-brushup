@@ -20,8 +20,29 @@ function mouse(click) {
     click();
 }
 
-mouse(drag);
-mouse(function(){
+/*mouse(drag);
+mouse(function () {
     console.log('anonymus called');
-});
+});*/
+
+//3. function should return the function and functions need to defined in side functions
+
+function keyboard() {
+
+    console.log('inside keyboard');
+
+    function buttons() { // clojure
+        console.log('inside buttons');
+    }
+
+    return function () { //// clojure
+        buttons();
+        console.log('returning function');
+    };
+}
+
+var fn = keyboard();
+fn();
+
+keyboard()(); //iife
 
