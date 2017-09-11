@@ -7,3 +7,12 @@ export class Mobile implements Charger {
         return 230;
     }
 }
+
+let ch : Charger = new Mobile();
+
+let ch1: Charger = {
+    DC_SUPPLY: 5,
+    powerSupply: () => 230
+}; 
+
+ch1 = ch;

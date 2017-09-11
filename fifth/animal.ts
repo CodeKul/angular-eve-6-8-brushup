@@ -2,7 +2,7 @@ export class Animal {
 
     legs = 4;
 
-    walk(): void {
+    walk() : void  {
         console.log(`animal is walking`);
     }
 }
